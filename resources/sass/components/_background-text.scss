@@ -1,0 +1,9 @@
+.background-text {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: fit-content;
+    margin-top: - $margin-3 !important;
+
+    @extend .paragraph-2, .text--size-7;
+}

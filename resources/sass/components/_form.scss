@@ -1,0 +1,82 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+    @mixin input {
+        margin-top: 1rem;
+        border: none;
+        background-color: $color-grey-1;
+        color: $color-grey-3;
+        width: 100%;
+        padding: 0.5rem;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            @extend .paragraph-1, .text--color-grey-3;
+        }
+    }
+
+    input {
+        @include input;
+
+        &::-webkit-calendar-picker-indicator {
+            background-image: url('../assets/icons/calendar-alt.svg');
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    textarea {
+        @include input;
+        @extend .paragraph-1, .text--color-grey-3;
+
+        &::placeholder {
+            @extend .paragraph-1, .text--color-grey-3;
+        }
+    }
+
+    &--color-dark {
+        input[type="date"] {
+            position: relative;
+            border-bottom: 2px solid $color-gold;
+            background-color: transparent;
+            color: $color-white;
+            width: 100%;
+
+            &::-webkit-calendar-picker-indicator {
+                background-image: url('../assets/icons/calendar.svg');
+                position: absolute;
+                left: 5px;
+            }
+
+            &::-webkit-datetime-edit-fields-wrapper {
+                position: relative;
+                left: 10px;
+
+                &:hover {
+                    cursor: text;
+                }
+            }
+
+            &::-webkit-datetime-edit {
+                position: relative;
+                left: 10px;
+
+                &:hover {
+                    cursor: text;
+                }
+            }
+        }
+    }
+
+    &--margin-top {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,37 @@
+.pagination {
+    &-text {
+        @extend .text, .text--font-3, .text--weight-2, .text--size-2, .text--align-center;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem;
+        border-radius: 0;
+        background-color: $color-white;
+        line-height: 2rem;
+        color: $color-grey-5;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-gold;
+            cursor: pointer;
+            color: $color-white;
+        }
+    }
+    
+    &-selected {
+        @extend .text, .text--font-3, .text--weight-2, .text--size-2, .text--align-center;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem;
+        border-radius: 0;
+        background-color: $color-gold;
+        line-height: 2rem;
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-white;
+            cursor: pointer;
+            color: $color-grey-5;
+        }
+    }
+}

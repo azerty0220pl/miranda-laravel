@@ -1,0 +1,19 @@
+@mixin padding($side, $value) {
+    @if $side =='y' {
+        padding-top: #{$value};
+        padding-bottom: #{$value};
+    }
+
+    @else if $side =='x' {
+        padding-left: #{$value};
+        padding-right: #{$value};
+    }
+
+    @else if $side {
+        padding-#{$side}: #{$value}rem;
+    }
+
+    @else {
+        padding: #{$value}rem;
+    }
+}

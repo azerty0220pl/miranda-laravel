@@ -1,0 +1,44 @@
+.entry {
+    position: relative;
+    padding: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .img {
+        aspect-ratio: 1;
+        width: 60%;
+        max-width: 6rem;
+
+        &--icon {
+            width: 4rem;
+            padding: 1rem;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .data {
+        margin-left: 1rem;
+
+        p {
+            margin: 0 !important;
+        }
+    }
+
+    .icon {
+        margin-left: auto;
+    }
+    
+    &--padding-small{
+        padding: 0.5rem 1rem;
+    }
+
+    &--margin-bottom {
+        margin-bottom: 4rem;
+    }
+}

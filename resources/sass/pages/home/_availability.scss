@@ -1,0 +1,20 @@
+.availability {
+    background-color: $color-grey-5;
+    padding-top: $margin-2;
+    padding-bottom: $margin-2;
+}
+
+@media only screen and (min-width: 1000px)  {
+    .availability {
+        .form {
+            flex-direction: row;
+            justify-content: space-between;
+            label {
+                width: 33%;
+                :last-of-type {
+                    margin-right: 5rem;
+                }
+            }
+        }
+    }
+}

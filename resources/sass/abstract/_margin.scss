@@ -1,0 +1,19 @@
+@mixin margin($side, $value) {
+    @if $side =='y' {
+        margin-top: #{$value};
+        margin-bottom: #{$value};
+    }
+
+    @else if $side =='x' {
+        margin-left: #{$value};
+        margin-right: #{$value};
+    }
+
+    @else if $side {
+        margin-#{$side}: #{$value}rem;
+    }
+
+    @else {
+        margin: #{$value}rem;
+    }
+}

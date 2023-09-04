@@ -1,0 +1,13 @@
+.intro {
+    background-color: $color-grey-5;
+}
+
+@media only screen and (min-width: 1000px) {
+    .intro {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        background: linear-gradient(to right, $color-grey-5, $color-grey-5 75%, $color-gold 75%, $color-gold);
+    }
+}

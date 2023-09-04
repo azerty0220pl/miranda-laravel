@@ -1,0 +1,17 @@
+.price {
+    &-1 {
+        @extend .text, .text--font-2, .text--weight-2, .text--size-4;
+
+        span {
+            @extend .text--size-2;
+        }
+    }
+
+    &-2 {
+        @extend .text, .text--font-2, .text--weight-2, .text--size-2;
+    }
+
+    &-wrong {
+        text-decoration-line: line-through;
+    }
+}

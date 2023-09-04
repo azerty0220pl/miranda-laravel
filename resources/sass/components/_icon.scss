@@ -1,0 +1,58 @@
+.icon {
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+
+    &--background-white {
+        background-color: $color-white !important;
+    }
+
+    &--background-gold {
+        background-color: $color-gold !important;
+    }
+
+    &--background-grey {
+        background-color: $color-grey-1 !important;
+    }
+
+    &--variant-big {
+        height: 30%;
+        max-width: 10rem;
+        width: auto;
+        z-index: 10;
+    }
+
+    &--variant-medium {
+        width: 4rem;
+        height: auto;
+        z-index: 10;
+    }
+
+    &--variant-background {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: auto;
+        z-index: 0;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 50%;
+    min-width: fit-content;
+    padding: 0 0.25rem;
+    margin: auto;
+
+    background-color: $color-white;
+    box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.05);
+    z-index: 10;
+    
+    &--margin-negative {
+        margin-top: -1.25rem !important;
+        margin-bottom: -1rem !important;
+    }
+}

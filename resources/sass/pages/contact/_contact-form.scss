@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1000px) {
+    .contact-form {
+        .form-pair {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+
+            label {
+                width: 100%;
+            }
+        }
+    }
+}

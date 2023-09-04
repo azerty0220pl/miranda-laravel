@@ -1,0 +1,9 @@
+.paragraph {
+    &-1 {
+        @extend .text, .text--font-2, .text--weight-1, .text--size-1;
+    }
+
+    &-2 {
+        @extend .text, .text--font-2, .text--weight-2, .text--size-1;
+    }
+}

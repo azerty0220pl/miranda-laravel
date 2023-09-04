@@ -1,0 +1,30 @@
+.button-text {
+    @extend .text, .text--color-white, .text--align-center, .text--spacing-5, .paragraph-2;
+}
+
+.button {
+    @extend .button-text;
+    border: none;
+    background-color: transparent;
+
+    &--variant-big {
+        @include padding(y, 1rem);
+        display: block;
+        width: 15rem;
+        margin-top: 1.5rem;
+    }
+
+    &--variant-gold {
+        @extend .button--variant-big;
+        background-color: $color-gold;
+    }
+
+    &--variant-outlined {
+        @extend .button--variant-big;
+        border: 2px solid $color-gold;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

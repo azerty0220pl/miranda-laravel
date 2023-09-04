@@ -1,0 +1,10 @@
+.achievements {
+    @extend .card, .card--background-grey-5, .card--direction-column, .card--justify-center, .card--align-center, .card--gap-4;
+}
+
+@media only screen and (min-width: 1000px) {
+    .achievements {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

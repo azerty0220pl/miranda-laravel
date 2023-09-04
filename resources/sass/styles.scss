@@ -1,0 +1,54 @@
+@import './abstract/variables';
+@import './abstract/fonts';
+@import './abstract/margin';
+@import './abstract/padding';
+
+@import './base/base';
+@import './base/card';
+@import './base/hidden';
+@import './base/text';
+
+@import './components/background-text';
+@import './components/button';
+@import './components/card';
+@import './components/entry';
+@import './components/form';
+@import './components/icon';
+@import './components/link';
+@import './components/logo';
+@import './components/pagination';
+@import './components/paragraph';
+@import './components/price';
+@import './components/room';
+@import './components/row';
+@import './components/swiper';
+@import './components/titles';
+@import './components/video';
+
+@import './layout/footer';
+@import './layout/header';
+@import './layout/home';
+@import './layout/section';
+
+@import './pages/home/about';
+@import './pages/home/achievements';
+@import './pages/home/availability';
+@import './pages/home/facilities';
+@import './pages/home/intro';
+@import './pages/home/lonely';
+
+@import './pages/about/restaurant';
+@import './pages/about/services';
+@import './pages/about/counter';
+
+@import './pages/rooms/rooms';
+
+@import './pages/contact/info';
+@import './pages/contact/map';
+@import './pages/contact/contact-form';
+
+@import './pages/offer/offer';
+
+@import './pages/details/main';
+@import './pages/details/headers';
+@import './pages/details/rosalina';

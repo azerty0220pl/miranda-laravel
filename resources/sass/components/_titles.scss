@@ -1,0 +1,45 @@
+.title {
+    &-1 {
+        @extend .text, .text--font-1, .text--size-5, .text--weight-1, .text--spacing-3, .text--color-white;
+        @include margin('y', '2rem');
+    }
+
+    &-2 {
+        @extend .text, .text--font-1, .text--size-5, .text--weight-1, .text--spacing-3;
+        @include margin('y', '1rem');
+    }
+
+    &-3 {
+        @extend .text, .text--font-1, .text--size-4, .text--weight-1, .text--spacing-3;
+        @include margin('top', '1.5rem');
+    }
+
+    &-4 {
+        @extend .text, .text--font-1, .text--size-3, .text--weight-1, .text--spacing-3;
+    }
+
+    &-5 {
+        @extend .text, .text--font-2, .text--size-5, .text--weight-2;
+
+        span {
+            @extend .text--size-2;
+        }
+    }
+
+    &-up {
+        @extend .text, .text--font-2, .text--size-1, .text--weight-2, .text--spacing-5;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .title {
+        &-1 {
+            font-size: $font-size-7;
+        }
+
+        &-2 {
+            font-size: $font-size-6;
+            @include margin('y', '2rem');
+        }
+    }
+}

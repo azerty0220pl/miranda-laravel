@@ -1,0 +1,74 @@
+.offer {
+    .offer_room {
+        .img {
+            width: 100%;
+            aspect-ratio: 2;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    .offer_content {
+        padding: 2rem;
+
+        .prices {
+            margin-top: -6rem;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    .navigation_button {
+        background-color: $color-white;
+
+        &:hover {
+            background-color: $color-gold;
+            cursor: pointer;
+
+            path {
+                fill: $color-white;
+            }
+        }
+
+        width: 2rem !important;
+        height: 2rem !important;
+        padding: 0.5rem !important;
+        bottom: 0.75rem;
+        right: 2rem;
+        z-index: 15;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .offer {
+        .offer_content {
+            position: relative;
+            width: 90%;
+            background-color: $color-white;
+            margin: auto;
+            margin-top: -5rem;
+            padding-top: 4rem;
+            border-top: 2px solid $color-gold;
+
+            .prices {
+                margin: 0;
+            }
+
+            .titles {
+                margin-top: -5rem;
+            }
+
+            &_body {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 1rem;
+                border-top: 1px solid $color-grey-2;
+            }
+        }
+    }
+}

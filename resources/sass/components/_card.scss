@@ -1,0 +1,11 @@
+.center-col {
+    @extend .card, .card--direction-column, .card--justify-center, .card--align-center;
+}
+
+.even-row {
+    @extend .card, .card--direction-row, .card--justify-evenly, .card--align-center, .card--gap-2;
+}
+
+.between-row {
+    @extend .card, .card--direction-row, .card--justify-between, .card--align-center, .card--gap-2;
+}

@@ -1,0 +1,48 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: $color-grey-5;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: $color-white;
+        align-items: center;
+
+        .left-div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding: $margin-1;
+        gap: 0.5rem;
+        background-color: $color-white;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        padding-top: $margin-2;
+        @include padding('x', 10vw);
+
+        .header {
+            margin-bottom: -1.5rem;
+
+            .menu-alt  {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                gap: 3rem;
+                width: 70%;
+            }
+        }
+    }
+}

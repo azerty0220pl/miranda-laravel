@@ -1,0 +1,23 @@
+section,
+footer {
+    padding: $margin-3 $margin-1;
+
+    .no-margin {
+        margin-left: -$margin-1;
+        margin-right: -$margin-1;
+    }
+
+    &.no-bottom {
+        padding-bottom: 0;
+    }
+
+    &.background-black {
+        background-color: $color-grey-5;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section, footer {
+        padding: $margin-3 $margin-5;
+    }
+}
