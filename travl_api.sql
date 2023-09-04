@@ -1,11 +1,3 @@
-CREATE DATABASE travl_api;
-USE travl_api;
-
-create schema gta_schema;
-
-CREATE SCHEMA travl_schema;
-USE travl_schema;
-
 CREATE TABLE users (
 	id INT NOT NULL AUTO_INCREMENT,
     full_name VARCHAR (50) NOT NULL,
