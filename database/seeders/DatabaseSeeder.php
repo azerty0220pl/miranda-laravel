@@ -18,6 +18,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        DB::unprepared(file_get_contents('./seed.sql'));
+        \DB::unprepared(file_get_contents('./travl_api.sql'));
     }
 }
