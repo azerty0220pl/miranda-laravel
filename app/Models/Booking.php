@@ -16,6 +16,11 @@ class Booking extends Model
         'request',
         'room'
     ];
+    
+    public function room()
+    {
+        return $this->belongsTo(Room::class);
+    }
 
     use HasFactory;
 }

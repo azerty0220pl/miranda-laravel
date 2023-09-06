@@ -16,5 +16,10 @@ class Room extends Model
         'offer'
     ];
 
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+    
     use HasFactory;
 }
