@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\RoomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/about');
+Route::redirect('/', '/index');
+
+Route::get('/index', [IndexController::class, 'show']);
 
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/rooms', [RoomController::class, 'show']);
