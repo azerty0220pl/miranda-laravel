@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\OfferController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/about', function () {
 });
 
 Route::get('/rooms', [RoomController::class, 'show']);
+
+Route::get('/offers', [OfferController::class, 'show']);
