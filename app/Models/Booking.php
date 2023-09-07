@@ -13,10 +13,11 @@ class Booking extends Model
         'check_in',
         'check_out',
         'request',
-        'request',
         'room'
     ];
     
+    public $timestamps = false;
+
     public function room()
     {
         return $this->belongsTo(Room::class);
