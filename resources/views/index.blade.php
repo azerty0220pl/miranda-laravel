@@ -14,6 +14,7 @@
 
 <section class="availability">
     <form id="contact-form" class="form form--color-dark" action="rooms" method="GET">
+        @csrf
         <label id="from-label" for="from">
             <p class="text--color-white paragraph-2">Arrival Date</p>
             <input type="date" id="from" name="from" required />

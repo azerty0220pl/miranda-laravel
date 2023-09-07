@@ -64,6 +64,7 @@
         </div>
         @else
         <form id="contact-form" class="form form--margin-top" action="contact" method="POST">
+            @csrf
             <div class="form-pair">
                 <label id="name-label" for="name">
                     <input type="text" id="name" name="name" placeholder="Your full name" required />
