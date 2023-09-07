@@ -77,7 +77,7 @@
                 <label id="email-label" for="email">
                     <input type="email" id="email" name="email" placeholder="Enter email address" required />
                 </label>
-                <label id="subject-label" for="phone">
+                <label id="subject-label" for="subject">
                     <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
                 </label>
             </div>

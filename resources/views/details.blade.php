@@ -45,7 +45,7 @@
         <div class="form">
             @csrf
             <p class="price-2 text--align-center">Check Availability</p>
-            <form action="details?id={{ $room['id'] }}" method="POST" class="form form--margin-top">
+            <form action="/details/{{ $room['id'] }}" method="POST" class="form form--margin-top">
                 <label id="from-label" for="from">
                     <p class="paragraph-2 text--color-grey-5">Check In</p>
                     <input type="date" id="from" name="from" required />
@@ -226,7 +226,7 @@
                             </p>
                             <div class="even-row">
                                 <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
-                                <a href="/details?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                                <a href="/details/{{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                             </div>
                         </div>
                     </div>

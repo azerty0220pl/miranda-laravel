@@ -114,7 +114,7 @@
                         </div>
                     </div>
 
-                    <a href="/details?id={{ $row['id'] }}" class="button button--variant-gold link">BOOK NOW</a>
+                    <a href="/details/{{ $row['id'] }}" class="button button--variant-gold link">BOOK NOW</a>
                 </div>
             </div>
         @endforeach

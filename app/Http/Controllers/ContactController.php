@@ -15,7 +15,7 @@ class ContactController extends Controller
 
     public function store(Request $request): View
     {
-        $contact = Message::create([
+        Message::create([
             'full_name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,

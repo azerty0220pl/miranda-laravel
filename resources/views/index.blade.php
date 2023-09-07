@@ -91,7 +91,7 @@
                         </p>
                         <div class="even-row">
                             <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
-                            <a href="/details?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                            <a href="/details/{{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                         </div>
                     </div>
                 </div>
