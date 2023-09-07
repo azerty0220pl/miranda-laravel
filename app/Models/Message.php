@@ -17,6 +17,6 @@ class Message extends Model
         'archived',
         'seen'
     ];
-    
+    public $timestamps = false;
     use HasFactory;
 }
