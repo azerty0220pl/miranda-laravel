@@ -18,7 +18,7 @@ class RoomController extends Controller
         $offset = $page * 9;
 
         if ($from != 0 && $to != 0) {
-            $query = Room::select('*')
+            $query = Room::select('rooms.*')
                 ->leftjoin(
                     'bookings',
                     'rooms.id',
@@ -28,13 +28,16 @@ class RoomController extends Controller
                 ->whereNull('bookings.id')
                 ->orWhere('bookings.check_in', '>', $to)
                 ->orWhere('bookings.check_out', '<', $from)
-                ->orderBy('rooms.room_name');
+                ->orderBy('rooms.room_name')
+                ->groupBy('rooms.id')
+                ->get();
 
-            $count = ceil($query->count() / 9);
             $rooms = $query
                 ->take(9)
-                ->skip($offset)
-                ->get();
+                ->skip($offset);
+
+            echo $query->count();
+            $count = ceil($query->count() / 9);
         } else {
             $count = ceil(Room::count() / 9);
             $rooms = Room::select('*')
