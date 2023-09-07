@@ -43,9 +43,9 @@
         </div>
         @else
         <div class="form">
-            @csrf
             <p class="price-2 text--align-center">Check Availability</p>
             <form action="/details/{{ $room['id'] }}" method="POST" class="form form--margin-top">
+                @csrf
                 <label id="from-label" for="from">
                     <p class="paragraph-2 text--color-grey-5">Check In</p>
                     <input type="date" id="from" name="from" required />
@@ -68,7 +68,7 @@
                 </label>
                 <label id="msg-label" for="request">
                     <p class="paragraph-2 text--color-grey-5">Message (Special Request)</p>
-                    <textarea id="request" rows="5" name="request" required></textarea>
+                    <textarea id="request" rows="5" name="msg" required></textarea>
                 </label>
                 <button type="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
             </form>

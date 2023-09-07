@@ -29,15 +29,13 @@ class RoomController extends Controller
                 ->orWhere('bookings.check_in', '>', $to)
                 ->orWhere('bookings.check_out', '<', $from)
                 ->orderBy('rooms.room_name')
-                ->groupBy('rooms.id')
-                ->get();
+                ->groupBy('rooms.id');
 
+            $count = ceil($query->get()->count() / 9);
             $rooms = $query
                 ->take(9)
-                ->skip($offset);
-
-            echo $query->count();
-            $count = ceil($query->count() / 9);
+                ->skip($offset)
+                ->get();
         } else {
             $count = ceil(Room::count() / 9);
             $rooms = Room::select('*')
