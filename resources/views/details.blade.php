@@ -44,7 +44,7 @@
         @else
         <div class="form">
             <p class="price-2 text--align-center">Check Availability</p>
-            <form action="/details/{{ $room['id'] }}" method="POST" class="form form--margin-top">
+            <form action="/rooms/{{ $room['id'] }}" method="POST" class="form form--margin-top">
                 @csrf
                 <label id="from-label" for="from">
                     <p class="paragraph-2 text--color-grey-5">Check In</p>
@@ -226,7 +226,7 @@
                             </p>
                             <div class="even-row">
                                 <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
-                                <a href="/details/{{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                                <a href="/rooms/{{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                             </div>
                         </div>
                     </div>
