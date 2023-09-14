@@ -31,7 +31,9 @@
                 </div>
                 <div>
                     <button class="button">
-                        <img class="icon" src="/assets/icons/user.svg" />
+                        <a href="/profile">
+                            <img class="icon" src="/assets/icons/user.svg" />
+                        </a>
                     </button>
                     <button class="button">
                         <img class="icon" src="/assets/icons/search.svg" />
