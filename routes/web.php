@@ -21,13 +21,13 @@ use App\Http\Controllers\ContactController;
 
 Route::redirect('/', '/index');
 
-Route::get('/index', [IndexController::class, 'show']);
+Route::get('/index', [IndexController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/offers', [OfferController::class, 'show']);
+Route::get('/offers', [OfferController::class, 'index']);
 
 Route::controller(RoomController::class)->group(function () {
     Route::get('/rooms', 'index');
@@ -36,7 +36,7 @@ Route::controller(RoomController::class)->group(function () {
 });
 
 Route::controller(ContactController::class)->group(function () {
-    Route::get('/contact', 'show');
+    Route::get('/contact', 'index');
     Route::post('/contact', 'store');
 });
 

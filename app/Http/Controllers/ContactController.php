@@ -8,7 +8,7 @@ use Illuminate\View\View;
 
 class ContactController extends Controller
 {
-    public function show(): View
+    public function index(): View
     {
         return view('contact', ["post" => false]);
     }

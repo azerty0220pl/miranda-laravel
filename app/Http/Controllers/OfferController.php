@@ -8,7 +8,7 @@ use Illuminate\View\View;
 
 class OfferController extends Controller
 {
-    public function show(Request $request): View
+    public function index(Request $request): View
     {
         require_once app_path('Utils/price.php');
 
