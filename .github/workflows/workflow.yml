@@ -11,6 +11,7 @@ jobs:
     - uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.HOST }}
+        username: root
         key: ${{ secrets.KEY }}
         script: |
           sudo su
