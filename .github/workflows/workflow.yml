@@ -16,7 +16,7 @@ jobs:
         script: |
           sudo su
           cd /var/www/miranda-laravel
-          git pull https://github.com/azerty0220pl/miranda-laravel.git
+          git pull
           php artisan --migrate
           composer install -n --no-plugins
           npm install
